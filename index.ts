@@ -15,7 +15,7 @@ import {
 } from "@substrate/asset-transfer-api";
 
 // From https://wiki.ibp.network/docs/consumers/archives/#assethub
-// RPC endpoint for the Asset Hub (formerly known as Statemint)
+// RPC endpoint for Polkadot Asset Hub (formerly known as Statemint)
 const RPC_ENDPOINT = "wss://sys.ibp.network/statemint";
 
 // In the UI is quite easy to get the sender account. Here is hardcoded for the sake of the example.
