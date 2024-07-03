@@ -2,10 +2,10 @@
  * Asset Transfer from Asset Hub to Parachain with Fee Payment in Asset.
  *
  * Scenario:
- * 1. A user wants to send an asset from the Asset Hub to a Parachain.
+ * 1. A user wants to send an asset from Asset Hub to a Parachain.
  * 2. The user doesn't have DOT to pay the transaction fee.
  * 3. The user wants to pay the transaction fee with the asset they're sending.
- * 4. The asset can be swapped for DOT on the Asset Hub to cover the fee.
+ * 4. The asset can be swapped for DOT on Asset Hub to cover the fee.
  *
  */
 
