@@ -1,0 +1,14 @@
+{
+  "name": "ah-example",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@substrate/asset-transfer-api": "^0.3.0"
+  }
+}
