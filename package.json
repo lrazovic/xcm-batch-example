@@ -6,9 +6,9 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.5.3"
   },
   "dependencies": {
-    "@substrate/asset-transfer-api": "^0.3.0"
+    "@substrate/asset-transfer-api": "^0.3.1"
   }
 }

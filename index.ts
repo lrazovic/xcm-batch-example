@@ -35,6 +35,7 @@ const { api, specName, safeXcmVersion } = await constructApiPromise(
 const assetApi = new AssetTransferApi(api, specName, safeXcmVersion);
 
 // We can now  easily create an Asset Hub -> Parachain XCM transfer transaction.
+// More documentation is available here: https://github.com/paritytech/asset-transfer-api
 const xcmExtrinsic = await assetApi.createTransferTransaction(
   `${PARA_ID}`,
   SENDER_ACCOUNT,
@@ -48,7 +49,7 @@ const xcmExtrinsic = await assetApi.createTransferTransaction(
 // Given the `xcmExtrinsic`, we have to estimate the fees.
 const { partialFee } = await xcmExtrinsic.tx.paymentInfo(SENDER_ACCOUNT);
 
-// We have also to compute the XCM fee. This will be possible once https://github.com/polkadot-fellows/runtimes/pull/359 is merged and deployed.
+// We have also to compute the XCM fee. This will be possible once https://github.com/polkadot-fellows/runtimes/pull/359 is merged and deployed on Polkadot Asset Hub.
 // More information on this can be found here: https://github.com/paritytech/polkadot-sdk/pull/3607
 // An example of how to compute the XCM fee can be found here: https://gist.github.com/PraetorP/4bc323ff85401abe253897ba990ec29d
 
